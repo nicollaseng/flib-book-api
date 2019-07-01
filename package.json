@@ -8,9 +8,10 @@
     "start": "nodemon ./index.js --exec babel-node --presets babel-preset-env",
     "restart": "touch ./app.js"
   },
-  "author": "Marcos Moraes <marcos.deskti@gmail.com>",
+  "author": "Nicollas Linhares <nicollas@rocketgo.com.br>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
