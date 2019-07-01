@@ -1,8 +1,8 @@
 import express from 'express'
-import list from './list'
+import { searchBook } from './list'
 
 const router = express.Router()
 
-router.get('/', list)
+router.get('/', searchBook)
 
 export default router
