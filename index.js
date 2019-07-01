@@ -2,6 +2,8 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import routes from './src/index'
+var emoji = require('node-emoji')
+
 require('dotenv').config()
 
 const app = express()
@@ -15,4 +17,4 @@ app.use(express.static('public'))
 
 routes(app)
 
-app.listen(PORT, () => console.log(`Express has been started ${PORT}`))
+app.listen(PORT, () => console.log(`Server started ${emoji.get('rocket')} at ${PORT}`))

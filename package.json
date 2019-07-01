@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js --exec babel-node --presets babel-preset-env",
-    "restart": "touch ./app.js",
-    "precommit": "pretty-quick --staged"
+    "restart": "touch ./app.js"
   },
   "author": "Marcos Moraes <marcos.deskti@gmail.com>",
   "license": "ISC",
@@ -15,18 +14,18 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.2"
+    "dotenv": "^8.0.0",
+    "express": "^4.16.2",
+    "https": "^1.0.0",
+    "node-emoji": "^1.10.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "nodemon": "^1.17.1",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.4.0",
     "lint-staged": "^8.2.0",
+    "nodemon": "^1.17.1",
     "prettier": "^1.18.2"
-
   }
 }
